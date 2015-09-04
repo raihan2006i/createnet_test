@@ -1,4 +1,4 @@
-- if user_signed_in?
+- if user_signed_in? && current_user.motd
   .row
     %blockquote
       #{render_markdown(current_user.motd)}

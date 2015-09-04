@@ -15,7 +15,7 @@ class User < ActiveRecord::Base
 
   def motd
     @client ||= Motd::Client.new
-    @client.motd
+    @motd ||= @client.motd
   end
 end
 

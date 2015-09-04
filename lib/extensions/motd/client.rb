@@ -41,7 +41,7 @@ module Motd
                                  correlation_id: call_id,
                                  reply_to: self.reply_queue.name)
 
-        self.lock.synchronize { condition.wait(lock) }
+        self.lock.synchronize { condition.wait(lock, 4.seconds) }
         response['message']
       rescue
         nil
