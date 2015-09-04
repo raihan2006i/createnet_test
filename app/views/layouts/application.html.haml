@@ -20,6 +20,9 @@
           %ul.nav.nav-pills.pull-right
             %li{:role => 'presentation'}
               %a{:href => root_url} Home
+            - if user_signed_in?
+              %li{:role => 'presentation'}
+                = link_to 'Sign out', destroy_user_session_path, method: :delete
         %h3.text-muted CreateNet Test
       .row
         .col-lg-12

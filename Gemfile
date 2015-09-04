@@ -51,3 +51,7 @@ gem 'twitter-bootstrap-rails'
 # Templating engine
 gem 'haml-rails', '~> 0.9.0'
 
+# Authentication with Devise and CAS
+gem 'devise'
+gem 'devise_cas_authenticatable'
+
