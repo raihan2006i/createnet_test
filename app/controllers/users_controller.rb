@@ -19,6 +19,6 @@ class UsersController < ApplicationController
   end
 
   def update_params
-    params.require(:user).permit(:address, :job_title)
+    params.require(:user).permit(:avatar, :address, :job_title)
   end
 end

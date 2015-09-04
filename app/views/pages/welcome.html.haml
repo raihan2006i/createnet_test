@@ -1,5 +1,6 @@
 .jumbotron
   - if user_signed_in?
+    %img{:src => current_user.avatar.url(:l), :alt => current_user.name, :class => "img-circle"}
     %h1 #{"Welcome #{current_user.name}"}
     %p.lead Click on Edit Profile button below and grab a chocolate!!
     %p

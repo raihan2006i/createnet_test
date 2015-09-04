@@ -58,3 +58,6 @@ gem 'devise_cas_authenticatable'
 # Form builder
 gem 'simple_form', '~> 3.1.0'
 
+# File upload
+gem 'paperclip', '~> 4.3'
+
