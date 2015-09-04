@@ -2,6 +2,15 @@
   - if user_signed_in?
     %img{:src => current_user.avatar.url(:l), :alt => current_user.name, :class => "img-circle"}
     %h1 #{"Welcome #{current_user.name}"}
+    - if current_user.job_title || current_user.address
+      %address
+        - if current_user.job_title
+          %strong #{current_user.job_title}
+          %br/
+        %a{:href => "mailto:#{current_user.email}"}
+          #{current_user.email}
+        %br/
+        #{current_user.address}
     %p.lead Click on Edit Profile button below and grab a chocolate!!
     %p
       %a.btn.btn-lg.btn-success{:href => users_edit_profile_path, :role => "button"} Edit Profile
