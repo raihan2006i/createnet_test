@@ -1,0 +1,7 @@
+%h2 Edit Profile
+
+= simple_form_for(@user, url: users_update_profile_path, html: { method: :put }) do |f|
+  = f.error_notification
+  = f.input :address
+  = f.input :job_title
+  = f.button :submit, 'Update'

@@ -55,3 +55,6 @@ gem 'haml-rails', '~> 0.9.0'
 gem 'devise'
 gem 'devise_cas_authenticatable'
 
+# Form builder
+gem 'simple_form', '~> 3.1.0'
+

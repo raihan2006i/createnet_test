@@ -3,7 +3,7 @@
     %h1 #{"Welcome #{current_user.name}"}
     %p.lead Click on Edit Profile button below and grab a chocolate!!
     %p
-      %a.btn.btn-lg.btn-success{:href => new_user_session_path, :role => "button"} Edit Profile
+      %a.btn.btn-lg.btn-success{:href => users_edit_profile_path, :role => "button"} Edit Profile
   - else
     %h1 Welcome
     %p.lead Click on Sign in button below and grab a coffee!!
