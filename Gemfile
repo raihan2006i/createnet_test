@@ -61,3 +61,9 @@ gem 'simple_form', '~> 3.1.0'
 # File upload
 gem 'paperclip', '~> 4.3'
 
+# Ruby client for RabbitMQ
+gem 'bunny', '~> 2.1.0'
+
+# A fast, safe and extensible Markdown to (X)HTML parser
+gem 'redcarpet', '~> 3.3.2'
+

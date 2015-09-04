@@ -1,3 +1,7 @@
+- if user_signed_in?
+  .row
+    %blockquote
+      #{render_markdown(current_user.motd)}
 .jumbotron
   - if user_signed_in?
     %img{:src => current_user.avatar.url(:l), :alt => current_user.name, :class => "img-circle"}

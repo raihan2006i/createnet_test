@@ -12,5 +12,10 @@ class User < ActiveRecord::Base
   def name
     "#{first_name} #{last_name}"
   end
+
+  def motd
+    @client ||= Motd::Client.new
+    @client.motd
+  end
 end
 
