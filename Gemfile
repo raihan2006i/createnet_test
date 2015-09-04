@@ -43,3 +43,11 @@ group :development, :test do
   gem 'spring'
 end
 
+# For twitter bootstrap assets and helpers
+gem 'therubyracer'
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
+
+# Templating engine
+gem 'haml-rails', '~> 0.9.0'
+
